@@ -20,6 +20,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     @IBOutlet weak var recordingLabel: UILabel!
     
     @IBAction func recordAudio(sender: UIButton) {
+        
         stopBtn.hidden = false
         recordingLabel.text = "recording..."
         recordingLabel.textColor = UIColor.blueColor()
@@ -46,20 +47,24 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     func audioRecorderDidFinishRecording(recorder: AVAudioRecorder!, successfully flag: Bool) {
-        if(flag){
+        
+        if (flag) {
             
             recordedAudio = RecordedAudio(filePathURL: recorder.url, title: recorder.url.lastPathComponent!)
-            
             self.performSegueWithIdentifier("stopRecording", sender: recordedAudio)
-        }else{
+            
+        } else {
+            
             println("Recording was not successful")
             recordingLabel.enabled = true
             stopBtn.hidden = true
+            
         }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if (segue.identifier == "stopRecording"){
+        
+        if (segue.identifier == "stopRecording") {
             let playSoundsVC:PlaySoundsViewController = segue.destinationViewController as PlaySoundsViewController
             let data = sender as RecordedAudio
             playSoundsVC.receivedAudio = data
@@ -68,6 +73,7 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @IBAction func stopBtnPressed(sender: UIButton) {
+        
         recordingLabel.text = "Tap to Record"
         audioRecorder.stop()
         var audioSession = AVAudioSession.sharedInstance()
@@ -75,20 +81,20 @@ class RecordSoundsViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     override func viewWillAppear(animated: Bool) {
+        
         stopBtn.hidden = true
         microPhoneBtn.enabled = true
         tapToRecord()
     }
     
-    func tapToRecord(){
+    func tapToRecord() {
+        
         recordingLabel.text = "Tap to Record"
         recordingLabel.textColor = UIColor.blackColor()
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
     }
 
     override func didReceiveMemoryWarning() {

@@ -23,9 +23,6 @@
                                 <state key="normal" image="Microphone">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="150" y="249" width="100" height="103"/>
-                                </variation>
                                 <connections>
                                     <action selector="recordAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dUa-Ak-hBa"/>
                                 </connections>
@@ -66,13 +63,13 @@
                                 <exclude reference="eHq-3g-khp"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="T5k-LW-TTd"/>
-                                <exclude reference="wqN-4D-sZC"/>
                                 <exclude reference="Czf-eV-YCJ"/>
                                 <exclude reference="fdO-0f-BaB"/>
                                 <exclude reference="jDj-dX-esQ"/>
                                 <exclude reference="9B4-68-3Qz"/>
                                 <exclude reference="mTW-3G-5UO"/>
+                                <exclude reference="T5k-LW-TTd"/>
+                                <exclude reference="wqN-4D-sZC"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -82,13 +79,13 @@
                                 <include reference="eHq-3g-khp"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="T5k-LW-TTd"/>
-                                <include reference="wqN-4D-sZC"/>
                                 <include reference="Czf-eV-YCJ"/>
                                 <include reference="fdO-0f-BaB"/>
                                 <include reference="jDj-dX-esQ"/>
                                 <include reference="9B4-68-3Qz"/>
                                 <include reference="mTW-3G-5UO"/>
+                                <include reference="T5k-LW-TTd"/>
+                                <include reference="wqN-4D-sZC"/>
                             </mask>
                         </variation>
                     </view>
@@ -184,16 +181,16 @@
                                 <exclude reference="FPL-JL-cLk"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="Mmb-Sj-Qzv"/>
-                                <exclude reference="iWD-5v-5UR"/>
-                                <exclude reference="WHA-Sw-svW"/>
-                                <exclude reference="qpF-ln-v5k"/>
-                                <exclude reference="nsI-Eb-dDh"/>
-                                <exclude reference="xXJ-D1-SF5"/>
                                 <exclude reference="UMR-lJ-6X6"/>
                                 <exclude reference="pgm-Hp-9rM"/>
+                                <exclude reference="Mmb-Sj-Qzv"/>
+                                <exclude reference="iWD-5v-5UR"/>
+                                <exclude reference="nsI-Eb-dDh"/>
+                                <exclude reference="xXJ-D1-SF5"/>
                                 <exclude reference="U3G-v3-1VD"/>
                                 <exclude reference="kAo-7n-bRb"/>
+                                <exclude reference="WHA-Sw-svW"/>
+                                <exclude reference="qpF-ln-v5k"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -205,16 +202,16 @@
                                 <include reference="FPL-JL-cLk"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="Mmb-Sj-Qzv"/>
-                                <include reference="iWD-5v-5UR"/>
-                                <include reference="WHA-Sw-svW"/>
-                                <include reference="qpF-ln-v5k"/>
-                                <include reference="nsI-Eb-dDh"/>
-                                <include reference="xXJ-D1-SF5"/>
                                 <include reference="UMR-lJ-6X6"/>
                                 <include reference="pgm-Hp-9rM"/>
+                                <include reference="Mmb-Sj-Qzv"/>
+                                <include reference="iWD-5v-5UR"/>
+                                <include reference="nsI-Eb-dDh"/>
+                                <include reference="xXJ-D1-SF5"/>
                                 <include reference="U3G-v3-1VD"/>
                                 <include reference="kAo-7n-bRb"/>
+                                <include reference="WHA-Sw-svW"/>
+                                <include reference="qpF-ln-v5k"/>
                             </mask>
                         </variation>
                     </view>
